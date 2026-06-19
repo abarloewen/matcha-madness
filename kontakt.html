@@ -27,7 +27,7 @@
   <div class="container split" style="align-items:start">
     <div class="reveal">
       <h2 data-i18n="ko.form.title">Kontaktiere uns für dein nächstes Event</h2>
-      <form class="form-grid" style="margin-top:1.6rem" onsubmit="event.preventDefault();this.style.display='none';document.getElementById('ko-success').style.display='block';">
+      <form class="form-grid" style="margin-top:1.6rem" data-formsubmit data-success="#ko-success" data-subject="Neue Kontakt-Anfrage – Matcha Madness">
         <div class="field"><label data-i18n="bk.f.first">Vorname <span class="req">*</span></label><input type="text" name="firstname" required></div>
         <div class="field"><label data-i18n="bk.f.last">Nachname <span class="req">*</span></label><input type="text" name="lastname" required></div>
         <div class="field"><label data-i18n="bk.f.email">E-Mail <span class="req">*</span></label><input type="email" name="email" required></div>
@@ -45,7 +45,7 @@
         <h3 data-i18n="ko.success.t" style="margin:.5rem 0">Danke für deine Nachricht!</h3>
         <p data-i18n="ko.success.b">Wir melden uns innerhalb von 24 Stunden bei dir.</p>
       </div>
-      <p data-i18n="ko.demo" style="margin-top:1rem;font-size:.82rem;color:var(--ink-soft)">Demo-Formular – es werden keine Daten übertragen.</p>
+      <p data-i18n="ko.demo" style="margin-top:1rem;font-size:.82rem;color:var(--ink-soft)">Wir behandeln deine Daten vertraulich und melden uns innerhalb von 24 Stunden.</p>
     </div>
 
     <div class="reveal" data-d="1">
@@ -69,5 +69,6 @@
 <script src="assets/js/components.js"></script>
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/forms.js"></script>
 </body>
 </html>

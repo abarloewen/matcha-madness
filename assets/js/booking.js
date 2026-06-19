@@ -158,7 +158,27 @@
     function escapeHtml(s) { return String(s).replace(/[&<>"]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]; }); }
 
     /* ---------- submit (demo) ---------- */
+    function fieldVal(sel) { var e = wizard.querySelector(sel); return e ? e.value : ""; }
     function submit() {
+      // deliver the inquiry by email (via forms.js → Formsubmit)
+      if (typeof window.MM_SEND === "function") {
+        window.MM_SEND({
+          _subject: "Neue Event-Anfrage – Matcha Madness",
+          _template: "table",
+          Paket: state.pkg ? "Paket " + state.pkg : "—",
+          Geschmacksrichtungen: state.flavors.length ? state.flavors.join(", ") : "—",
+          Gaeste: state.guests || "—",
+          Datum: fieldVal("[name=date]") || "—",
+          Uhrzeit: fieldVal("[name=time]") || "—",
+          Ort: fieldVal("[name=location]") || "—",
+          Vorname: fieldVal("[name=firstname]"),
+          Nachname: fieldVal("[name=lastname]"),
+          "E-Mail": fieldVal("[name=email]"),
+          Telefon: fieldVal("[name=phone]") || "—",
+          Nachricht: fieldVal("[name=message]") || "—",
+          "Preis-Orientierung": "€ " + estimate()
+        }).catch(function () {});
+      }
       if (foot) foot.style.display = "none";
       tabs.forEach(function (t) { t.classList.add("done"); t.classList.remove("active"); });
       steps.forEach(function (s) { s.classList.remove("active"); });

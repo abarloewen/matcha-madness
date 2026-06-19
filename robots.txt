@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abarloewen.github.io/matcha-madness/sitemap.xml
