@@ -226,14 +226,12 @@ strong { color: var(--ink); font-weight: 700; }
 .hero-bg::after {
   content: ""; position: absolute; inset: 0;
   background:
-    /* readable side-anchored darkening (text sits on the start side) */
-    linear-gradient(100deg, rgba(24,35,16,.88) 0%, rgba(28,40,20,.55) 38%, rgba(36,30,24,.10) 66%, rgba(36,30,24,0) 100%),
-    /* warm bottom blend toward the page */
-    linear-gradient(0deg, rgba(22,28,15,.80) 0%, rgba(22,28,15,.18) 24%, rgba(22,28,15,0) 42%),
-    /* top scrim for the transparent header */
-    linear-gradient(180deg, rgba(18,22,12,.45) 0%, rgba(18,22,12,0) 18%),
-    /* soft matcha glow to bring the green to life */
-    radial-gradient(120% 90% at 82% 22%, rgba(132,164,94,.28), rgba(132,164,94,0) 55%);
+    /* vignette darkening behind the headline (left-center) so the photo stays vivid elsewhere */
+    radial-gradient(115% 120% at 22% 56%, rgba(20,26,16,.86) 0%, rgba(20,26,16,.46) 34%, rgba(20,26,16,.10) 60%, rgba(20,26,16,0) 82%),
+    /* soft top scrim under the transparent header */
+    linear-gradient(180deg, rgba(20,26,16,.30) 0%, rgba(20,26,16,0) 16%),
+    /* bottom blend for the buttons + stats */
+    linear-gradient(0deg, rgba(20,26,16,.48) 0%, rgba(20,26,16,0) 28%);
 }
 /* subtle film grain so the wash never reads as flat grey */
 .hero-bg::before {
