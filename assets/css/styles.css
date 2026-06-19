@@ -139,6 +139,13 @@ strong { color: var(--ink); font-weight: 700; }
   transition: background var(--t-fast), box-shadow var(--t-fast), padding var(--t-fast);
   padding-block: 1.1rem;
 }
+/* gradient scrim behind the transparent header so white nav stays readable on any hero */
+.site-header::before {
+  content: ""; position: absolute; inset: 0; inset-block-end: auto; height: 150%; z-index: -1;
+  pointer-events: none; transition: opacity var(--t-fast);
+  background: linear-gradient(180deg, rgba(18,24,12,.62) 0%, rgba(18,24,12,.32) 55%, rgba(18,24,12,0) 100%);
+}
+.site-header.scrolled::before { opacity: 0; }
 .site-header.scrolled {
   background: rgba(251,249,244,.92);
   backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
