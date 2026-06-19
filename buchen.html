@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Event buchen · Matcha Madness</title>
+<meta name="description" content="Buche dein Matcha-Catering in wenigen Schritten: Paket wählen, Geschmacksrichtungen, Datum und Gästezahl – mit sofortiger Preis-Orientierung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍵%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-title-key="meta.book.title">
+<div id="site-header"></div>
+
+<section class="page-hero" style="padding-block:9rem 3rem">
+  <div class="hero-bg"><img src="https://images.squarespace-cdn.com/content/v1/69ee6d3b517677487d633f31/27c9a7a8-2890-4c87-992b-38f5c20afd81/IMG_8433.JPG?format=2000w" alt=""></div>
+  <div class="container">
+    <span class="eyebrow" data-i18n="bk.eyebrow">Event buchen</span>
+    <h1 data-i18n="bk.title">Plane deinen Matcha-Moment</h1>
+    <p class="measure mx-auto" data-i18n="bk.sub">In fünf einfachen Schritten zu deinem Angebot. Unverbindlich – wir melden uns innerhalb von 24 Stunden bei dir.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(2rem,4vw,3.5rem)">
+  <div class="container booking">
+    <div class="wizard">
+      <div class="wizard-progress">
+        <div class="wz-tab active"><span class="n">1</span><span class="label" data-i18n="bk.tab1">Paket</span></div>
+        <div class="wz-tab"><span class="n">2</span><span class="label" data-i18n="bk.tab2">Sorten</span></div>
+        <div class="wz-tab"><span class="n">3</span><span class="label" data-i18n="bk.tab3">Event</span></div>
+        <div class="wz-tab"><span class="n">4</span><span class="label" data-i18n="bk.tab4">Kontakt</span></div>
+        <div class="wz-tab"><span class="n">5</span><span class="label" data-i18n="bk.tab5">Übersicht</span></div>
+      </div>
+
+      <form class="wizard-body" onsubmit="return false">
+        <!-- STEP 1 -->
+        <div class="wz-step active">
+          <h3 data-i18n="bk.s1.title">Wähle dein Paket</h3>
+          <p data-i18n="bk.s1.sub">Jedes Paket ist eine flexible Basis – du kannst später alles anpassen.</p>
+          <div class="option-grid">
+            <div class="option" data-pkg="S" data-price="299" data-flavors-included="1">
+              <div class="o-tier">Paket S</div>
+              <div class="o-price">ab 299€</div>
+              <div class="o-desc" data-i18n="bk.s1.s">1 Sorte · 2 Std · kleinere Feiern</div>
+            </div>
+            <div class="option" data-pkg="M" data-price="349" data-flavors-included="3">
+              <div class="o-tier">Paket M</div>
+              <div class="o-price">ab 349€</div>
+              <div class="o-desc" data-i18n="bk.s1.m">3 Sorten · Milch-Varianten · beliebt</div>
+            </div>
+            <div class="option" data-pkg="L" data-price="399" data-flavors-included="5">
+              <div class="o-tier">Paket L</div>
+              <div class="o-price">ab 399€</div>
+              <div class="o-desc" data-i18n="bk.s1.l">5 Sorten · volles Branding · große Feiern</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="wz-step">
+          <h3 data-i18n="bk.s2.title">Deine Geschmacksrichtungen</h3>
+          <p data-flavor-hint data-tmpl="{n} in deinem Paket inklusive – jede weitere +25€." data-i18n="bk.s2.hint">1 in deinem Paket inklusive – jede weitere +25€.</p>
+          <div class="option-grid">
+            <div class="option option--flavor" data-flavor="klassisch"><span class="dot" style="background:var(--matcha-400)"></span><b data-i18n="flav.1">Klassisch</b></div>
+            <div class="option option--flavor" data-flavor="erdbeere"><span class="dot" style="background:var(--berry)"></span><b data-i18n="flav.2">Erdbeere</b></div>
+            <div class="option option--flavor" data-flavor="himbeere"><span class="dot" style="background:#9E3A52"></span><b data-i18n="flav.3">Himbeere</b></div>
+            <div class="option option--flavor" data-flavor="vanille"><span class="dot" style="background:var(--vanilla)"></span><b data-i18n="flav.4">Vanille</b></div>
+            <div class="option option--flavor" data-flavor="mango"><span class="dot" style="background:var(--mango)"></span><b data-i18n="flav.5">Mango</b></div>
+            <div class="option option--flavor" data-flavor="minze"><span class="dot" style="background:#7BAE8F"></span><b data-i18n="flav.6">Minze</b></div>
+            <div class="option option--flavor" data-flavor="karamell"><span class="dot" style="background:#C98A5E"></span><b data-i18n="flav.7">Karamell</b></div>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="wz-step">
+          <h3 data-i18n="bk.s3.title">Details zu deinem Event</h3>
+          <p data-i18n="bk.s3.sub">Damit wir alles perfekt vorbereiten können.</p>
+          <div class="form-grid">
+            <div class="field full">
+              <label data-i18n="bk.f.location">Wo findet das Event statt? <span class="req">*</span></label>
+              <input type="text" name="location" required data-i18n-ph="bk.ph.location" placeholder="z. B. Köln, Eventlocation oder Adresse">
+            </div>
+            <div class="field">
+              <label data-i18n="bk.f.date">Datum <span class="req">*</span></label>
+              <input type="date" name="date" required>
+            </div>
+            <div class="field">
+              <label data-i18n="bk.f.time">Uhrzeit</label>
+              <input type="time" name="time">
+            </div>
+          </div>
+          <p data-i18n="bk.s3.guests" style="margin:1.6rem 0 1rem;font-weight:700;color:var(--ink)">Wie viele Gäste erwartest du?</p>
+          <div class="option-grid">
+            <div class="option" data-guests="50–100" data-surcharge="0"><div class="o-tier">50–100</div><div class="o-desc" data-i18n="bk.g.included">im Grundpreis</div></div>
+            <div class="option" data-guests="100–250" data-surcharge="150"><div class="o-tier">100–250</div><div class="o-desc">+150€</div></div>
+            <div class="option" data-guests="250–500" data-surcharge="350"><div class="o-tier">250–500</div><div class="o-desc">+350€</div></div>
+            <div class="option" data-guests="500–1.000" data-surcharge="650"><div class="o-tier">500–1.000</div><div class="o-desc">+650€</div></div>
+          </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="wz-step">
+          <h3 data-i18n="bk.s4.title">Deine Kontaktdaten</h3>
+          <p data-i18n="bk.s4.sub">Wir melden uns mit deinem persönlichen Angebot.</p>
+          <div class="form-grid">
+            <div class="field"><label data-i18n="bk.f.first">Vorname <span class="req">*</span></label><input type="text" name="firstname" required></div>
+            <div class="field"><label data-i18n="bk.f.last">Nachname <span class="req">*</span></label><input type="text" name="lastname" required></div>
+            <div class="field"><label data-i18n="bk.f.email">E-Mail <span class="req">*</span></label><input type="email" name="email" required></div>
+            <div class="field"><label data-i18n="bk.f.phone">Telefon</label><input type="tel" name="phone"></div>
+            <div class="field full"><label data-i18n="bk.f.msg">Nachricht / besondere Wünsche</label><textarea name="message" data-i18n-ph="bk.ph.msg" placeholder="Erzähl uns mehr über dein Event …"></textarea></div>
+          </div>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="wz-step">
+          <h3 data-i18n="bk.s5.title">Deine Übersicht</h3>
+          <p data-i18n="bk.s5.sub">Bitte prüfe deine Angaben, bevor du die Anfrage absendest.</p>
+          <div class="summary" data-summary style="background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-sm);padding:1.4rem 1.6rem;margin-bottom:1.4rem"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;background:var(--matcha-100);border-radius:var(--radius-sm);padding:1.2rem 1.6rem">
+            <div><span data-i18n="bk.est.label" style="font-weight:700">Unverbindliche Preis-Orientierung</span><br><small data-i18n="bk.est.note" style="color:var(--ink-soft)">Finales Angebot nach persönlicher Beratung</small></div>
+            <b data-summary-est style="font-family:var(--font-display);font-size:1.8rem;color:var(--matcha-800)">€ —</b>
+          </div>
+        </div>
+      </form>
+
+      <div class="wizard-foot">
+        <button class="btn btn--ghost" data-wz-back data-i18n="bk.back">Zurück</button>
+        <div class="wz-estimate" style="text-align:end"><span data-i18n="bk.estimate">Geschätzt ab</span> <b>€ —</b></div>
+        <button class="btn btn--primary" data-wz-next data-i18n="book.next">Weiter</button>
+      </div>
+
+      <!-- SUCCESS -->
+      <div class="wizard-success">
+        <div class="check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 data-i18n="bk.done.title">Danke für deine Anfrage!</h3>
+        <p class="measure-sm mx-auto" data-i18n="bk.done.sub" style="margin-top:.6rem">Wir haben deine Anfrage erhalten und melden uns innerhalb von 24 Stunden mit deinem persönlichen Angebot. Geschätzter Wert: <b data-success-est>€ —</b></p>
+        <a class="btn btn--dark" href="index.html" data-i18n="bk.done.home" style="margin-top:1.6rem">Zurück zur Startseite</a>
+      </div>
+    </div>
+
+    <p class="center" data-i18n="bk.demo" style="margin-top:1.2rem;font-size:.85rem;color:var(--ink-soft)">Dies ist ein Demo-Buchungstool. Es werden keine Zahlungsdaten erfasst und keine verbindliche Buchung ausgelöst.</p>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/booking.js"></script>
+</body>
+</html>

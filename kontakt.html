@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt · Matcha Madness</title>
+<meta name="description" content="Kontaktiere Matcha Madness für dein nächstes Event in Köln, Bonn, Düsseldorf oder Leverkusen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍵%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-title-key="meta.contact.title">
+<div id="site-header"></div>
+
+<section class="page-hero" style="padding-block:10rem 4rem">
+  <div class="hero-bg"><img src="https://images.squarespace-cdn.com/content/v1/69ee6d3b517677487d633f31/6ddbc6f6-5d7f-45ff-afc5-d03e27c58a6c/Matcha+Catering+service-2.png?format=2000w" alt=""></div>
+  <div class="container">
+    <span class="eyebrow" data-i18n="ko.eyebrow">Kontakt</span>
+    <h1 data-i18n="ko.title">Lass uns dein Event planen</h1>
+    <p class="measure mx-auto" data-i18n="ko.sub">Erzähl uns von deiner Idee. Wir melden uns innerhalb von 24 Stunden mit einem persönlichen Angebot.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split" style="align-items:start">
+    <div class="reveal">
+      <h2 data-i18n="ko.form.title">Kontaktiere uns für dein nächstes Event</h2>
+      <form class="form-grid" style="margin-top:1.6rem" onsubmit="event.preventDefault();this.style.display='none';document.getElementById('ko-success').style.display='block';">
+        <div class="field"><label data-i18n="bk.f.first">Vorname <span class="req">*</span></label><input type="text" name="firstname" required></div>
+        <div class="field"><label data-i18n="bk.f.last">Nachname <span class="req">*</span></label><input type="text" name="lastname" required></div>
+        <div class="field"><label data-i18n="bk.f.email">E-Mail <span class="req">*</span></label><input type="email" name="email" required></div>
+        <div class="field"><label data-i18n="bk.f.phone">Telefon</label><input type="tel" name="phone"></div>
+        <div class="field"><label data-i18n="ko.f.location">Wo findet das Event statt? <span class="req">*</span></label><input type="text" name="location" required></div>
+        <div class="field"><label data-i18n="bk.f.date">Datum</label><input type="date" name="date"></div>
+        <div class="field full"><label data-i18n="ko.f.guests">Personen</label>
+          <select name="guests"><option>50–100</option><option>100–250</option><option>250–500</option><option>500–1.000</option></select>
+        </div>
+        <div class="field full"><label data-i18n="bk.f.msg">Nachricht / besondere Wünsche</label><textarea name="message" data-i18n-ph="bk.ph.msg" placeholder="Erzähl uns mehr über dein Event …"></textarea></div>
+        <div class="field full"><button class="btn btn--primary btn--lg btn--block" type="submit" data-i18n="ko.send">Senden</button></div>
+      </form>
+      <div id="ko-success" style="display:none;background:var(--matcha-100);border-radius:var(--radius);padding:2rem;text-align:center">
+        <div style="font-size:2.4rem">🍵</div>
+        <h3 data-i18n="ko.success.t" style="margin:.5rem 0">Danke für deine Nachricht!</h3>
+        <p data-i18n="ko.success.b">Wir melden uns innerhalb von 24 Stunden bei dir.</p>
+      </div>
+      <p data-i18n="ko.demo" style="margin-top:1rem;font-size:.82rem;color:var(--ink-soft)">Demo-Formular – es werden keine Daten übertragen.</p>
+    </div>
+
+    <div class="reveal" data-d="1">
+      <div class="card" style="margin-bottom:1.2rem">
+        <h3 data-i18n="ko.info.title" style="margin-bottom:1rem">Direkt erreichen</h3>
+        <p style="display:flex;gap:.7rem;align-items:flex-start;margin-bottom:.8rem"><span>📍</span><span><b data-i18n="ko.info.addr">Adresse</b><br>Aloeweg 44, 51109 Köln</span></p>
+        <p style="display:flex;gap:.7rem;align-items:flex-start;margin-bottom:.8rem"><span>✉️</span><span><b>E-Mail</b><br><a href="mailto:matchamadness.cgn@gmail.com" style="color:var(--matcha-700)">matchamadness.cgn@gmail.com</a></span></p>
+        <p style="display:flex;gap:.7rem;align-items:flex-start;margin-bottom:.8rem"><span>📸</span><span><b>Instagram</b><br><a href="https://www.instagram.com/matchamadness_cgn" target="_blank" rel="noopener" style="color:var(--matcha-700)">@matchamadness_cgn</a></span></p>
+        <p style="display:flex;gap:.7rem;align-items:flex-start"><span>🕒</span><span><b data-i18n="ko.info.resp">Antwortzeit</b><br><span data-i18n="ko.info.resp.v">Innerhalb von 24 Stunden</span></span></p>
+      </div>
+      <div class="card section--matcha" style="border:none">
+        <h3 data-i18n="ko.area.title" style="color:#fff;margin-bottom:.6rem">Unser Einzugsgebiet</h3>
+        <p data-i18n="ko.area.body" style="color:rgba(255,255,255,.85)">Köln · Bonn · Düsseldorf · Leverkusen · Bergisch-Gladbach. Anfahrt innerhalb dieses Gebiets immer inklusive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/components.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
