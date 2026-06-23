@@ -683,3 +683,13 @@ html[lang="ar"] .price-amount, html[lang="ar"] .hero-meta b, html[lang="ar"] .st
   .reveal { opacity: 1; transform: none; }
   .marquee-track { animation: none !important; }
 }
+
+/* ---------- Brand wordmark logo (faithful to the live Matcha Madness mark) ---------- */
+.logo-lockup { display: flex; flex-direction: column; line-height: 1; color: var(--ink); transition: color var(--t-fast); }
+.logo-lockup .ll-1 { font-family: var(--font-body); font-weight: 800; font-size: 1.22rem; letter-spacing: .24em; }
+.logo-lockup .ll-2 { font-family: var(--font-body); font-weight: 700; font-size: .56rem; letter-spacing: .34em; margin-top: .38em; display: flex; align-items: baseline; gap: .7em; }
+.logo-lockup .ll-jp { font-size: .74rem; letter-spacing: .08em; font-weight: 700; }
+.scrolled .brand .logo-lockup .ll-1 { font-size: 1.08rem; }
+.site-header:not(.scrolled) .logo-lockup { color: #fff; }
+.site-footer .logo-lockup { color: #fff; }
+@media (max-width: 520px) { .logo-lockup .ll-1 { font-size: 1.05rem; letter-spacing: .2em; } }

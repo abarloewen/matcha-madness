@@ -31,8 +31,7 @@
   var header =
     '<header class="site-header"><div class="container header-inner">' +
       '<a class="brand" href="index.html" aria-label="Matcha Madness">' +
-        '<span style="color:var(--matcha-400);display:flex">' + leaf + '</span>' +
-        '<span class="brand-name">Matcha Madness<small>Catering · Köln</small></span>' +
+        '<span class="logo-lockup"><span class="ll-1">MATCHA</span><span class="ll-2">MADNESS<span class="ll-jp">抹茶</span></span></span>' +
       '</a>' +
       '<nav class="main-nav">' + navLinks +
         '<a class="btn btn--primary" href="buchen.html" data-i18n="nav.book" style="margin-inline-start:.5rem"></a>' +
@@ -50,8 +49,7 @@
     '<footer class="site-footer"><div class="container">' +
       '<div class="footer-top">' +
         '<div class="footer-brand">' +
-          '<div class="brand" style="margin-bottom:1rem"><span style="color:var(--matcha-300);display:flex">' + leaf +
-            '</span><span class="brand-name" style="color:#fff">Matcha Madness<small style="color:var(--matcha-300)">Catering · Köln</small></span></div>' +
+          '<div class="brand" style="margin-bottom:1rem"><span class="logo-lockup"><span class="ll-1">MATCHA</span><span class="ll-2">MADNESS<span class="ll-jp">抹茶</span></span></span></div>' +
           '<p data-i18n="footer.tagline"></p>' +
           '<div class="social">' +
             '<a href="' + IG + '" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>' +
