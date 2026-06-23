@@ -21,6 +21,7 @@
     ["pakete-preise.html",  "nav.pricing"],
     ["galerie.html",        "nav.gallery"],
     ["ueber-uns.html",      "nav.about"],
+    ["blog.html",           "nav.blog"],
     ["kontakt.html",        "nav.contact"]
   ];
 

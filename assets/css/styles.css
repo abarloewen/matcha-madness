@@ -515,7 +515,7 @@ html[lang="ar"] .price-amount, html[lang="ar"] .hero-meta b, html[lang="ar"] .st
   .split--wide-img { grid-template-columns: 1fr; }
 }
 /* nav collapses to the hamburger before the inline bar would crowd */
-@media (max-width: 1160px) {
+@media (max-width: 1240px) {
   .main-nav {
     position: fixed; inset: 0; flex-direction: column; justify-content: center; align-items: center;
     gap: 1.5rem; background: var(--cream); transform: translateX(100%); transition: transform var(--t);
