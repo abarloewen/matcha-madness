@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 /* ============================================================
    MATCHA MADNESS — Premium Catering Website
    Design system by Ummah Collective
@@ -686,9 +687,9 @@ html[lang="ar"] .price-amount, html[lang="ar"] .hero-meta b, html[lang="ar"] .st
 
 /* ---------- Brand wordmark logo (faithful to the live Matcha Madness mark) ---------- */
 .logo-lockup { display: flex; flex-direction: column; line-height: 1; color: var(--ink); transition: color var(--t-fast); }
-.logo-lockup .ll-1 { font-family: var(--font-body); font-weight: 800; font-size: 1.22rem; letter-spacing: .24em; }
-.logo-lockup .ll-2 { font-family: var(--font-body); font-weight: 700; font-size: .56rem; letter-spacing: .34em; margin-top: .38em; display: flex; align-items: baseline; gap: .7em; }
-.logo-lockup .ll-jp { font-size: .74rem; letter-spacing: .08em; font-weight: 700; }
+.logo-lockup .ll-1 { font-family: "Montserrat", var(--font-body); font-weight: 700; font-size: 1.16rem; letter-spacing: .26em; padding-inline-start: .26em; }
+.logo-lockup .ll-2 { font-family: "Montserrat", var(--font-body); font-weight: 400; font-size: .58rem; letter-spacing: .46em; margin-top: .42em; display: flex; align-items: baseline; gap: .9em; padding-inline-start: .46em; }
+.logo-lockup .ll-jp { font-size: .82rem; letter-spacing: .14em; font-weight: 400; }
 .scrolled .brand .logo-lockup .ll-1 { font-size: 1.08rem; }
 .site-header:not(.scrolled) .logo-lockup { color: #fff; }
 .site-footer .logo-lockup { color: #fff; }
