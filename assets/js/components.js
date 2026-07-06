@@ -83,6 +83,7 @@
         '<span style="display:flex;gap:1.2rem;flex-wrap:wrap">' +
           '<a href="impressum.html" data-i18n="nav.imprint"></a>' +
           '<a href="datenschutz.html" data-i18n="nav.privacy"></a>' +
+          '<a href="#" data-cookie-settings data-i18n="nav.cookies"></a>' +
         '</span>' +
         '<span class="footer-credit" data-i18n-html="footer.credit"></span>' +
       '</div>' +

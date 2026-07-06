@@ -10,19 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍵%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="canonical" href="https://matchakoeln.de/blog.html">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Matcha Madness">
-<meta property="og:title" content="Blog · Matcha Madness">
-<meta property="og:description" content="Wissenswertes rund um Matcha, Events und gesunden Genuss – der Matcha Madness Journal.">
-<meta property="og:url" content="https://matchakoeln.de/blog.html">
-<meta property="og:image" content="https://matchakoeln.de/assets/img/blog/perfekter-matcha.jpg">
-<meta property="og:locale" content="de_DE">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog · Matcha Madness">
-<meta name="twitter:description" content="Wissenswertes rund um Matcha, Events und gesunden Genuss – der Matcha Madness Journal.">
-<meta name="twitter:image" content="https://matchakoeln.de/assets/img/blog/perfekter-matcha.jpg">
 </head>
 <body data-title-key="meta.blog.title">
 <div id="site-header"></div>
@@ -83,6 +70,5 @@
 <script src="assets/js/components.js"></script>
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/consent.js"></script>
 </body>
 </html>
