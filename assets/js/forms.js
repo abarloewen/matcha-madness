@@ -15,6 +15,9 @@
         e.preventDefault();
         var payload = { _subject: form.getAttribute("data-subject") || "Neue Anfrage – Matcha Madness", _template: "table" };
         new FormData(form).forEach(function (v, k) { payload[k] = v; });
+        // Reply-To = sender's email, so hitting "Reply" in the mail app writes to the customer
+        var replyto = payload.email || payload["E-Mail"] || payload.Email || payload["e-mail"] || "";
+        if (replyto) payload._replyto = replyto;
 
         var btn = form.querySelector("[type=submit]");
         if (btn) { btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = "…"; }
